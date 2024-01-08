@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-s5!p8ms=5$p4-__#u@e%x^75lfg&cp+rdl^)tjtq69ifqbrau_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -69,11 +69,11 @@ CHANNEL_LAYERS = {
     },
 }
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels.layers.InMemoryChannelLayer"
-    }
-}
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels.layers.InMemoryChannelLayer"
+#     }
+# }
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
